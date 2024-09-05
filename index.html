@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mukul's portfolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+/* Education, Work Experience, and Co-curricular Styles */
+#education, #work-experience, #co-curricular {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+  </style>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="assets\png\mukul.png"
+              alt="Mukul Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">MUKUL</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, My name is Mukul</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            I am a CSE student specializing in AI and Machine Learning with practical experience in innovative projects.
+             I excel in data science, programming, problem-solving, leadership and web designing & development.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/mukul-613866201/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/mukul20csu355" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+         <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="assets\png\whatsapp.png"
+              alt="icon"
+              class="home-hero__social-icon"
+              id="whatsappIcon">
+          </a>
+        </div> 
+         <div class="home-hero__social">
+          <a
+            href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=mukulchaudhary870@gmail.com&tf=1"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="assets\png\gmail.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            What sets me apart is my strong determination to continuously learn and grow in the dynamic IT Industry. I always eager
+             to stay updated with the latest technology, trends and industry practices .Aditionally my ability to adapt to new environment and 
+             my passion for collaborating with a diverse range of individuals make me a valuable asset to any team.
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+               I am <strong>Mukul</strong>, a dedicated and results-driven Computer Science and Engineering student 
+               specializing in Artificial Intelligence and Machine Learning. 
+               With a robust foundation in data science and programming, I am passionate about
+                leveraging technology to create innovative solutions. My hands-on experience includes 
+                developing AI-based projects , Web designing & development. Alongside my technical expertise, I excel in project management, 
+                  problem-solving, and leadership. My education from The Northcap University, various 
+                  internships and freelancing work, have equipped me 
+                  with a diverse skill set in machine learning, data visualization, and software development. 
+                  I am eager to contribute to dynamic and challenging environments where I 
+                  can apply my skills and creativity to drive impactful solutions.                
+              </p>
+              <p class="about__content-details-para">
+               
+                <strong>Contact me here.</strong> 
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Figma</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Flutter</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">Tableau</div>
+              <div class="skills__skill">Machine Learning</div>
+              <div class="skills__skill">Data Visualization & Quantitative Analysis</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">Web Development</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+           Showcasing a diverse range of innovative and impactful projects that demonstrate my 
+           expertise in Web designing & development, AI, Machine Learning, and software development.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets\jpeg\sevenceramix.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Sevenceramix</h3>
+              <p class="projects__row-content-desc">
+               It is a visually captivating and user-friendly photographer's website that I 
+               developed using HTML, CSS, and JavaScript. This project showcases my expertise in front-end development, 
+               featuring a responsive design that ensures optimal viewing on all devices. The website includes a
+                beautifully arranged gallery layout, interactive elements, smooth navigation, and an image modal 
+                for full-screen viewing. By incorporating engaging animations and hover effects, Sevenceramix offers
+                 an enhanced user experience. This project reflects my technical skills and creativity in crafting
+                  professional web applications.
+              </p>
+              <a
+                href="https://sevenceramix.com/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link !</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets\jpeg\insaafai.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Insaaf-Insight</h3>
+              <p class="projects__row-content-desc">
+                 Project aimed at enhancing the accessibility and efficiency of the Indian legal
+                 system through the integration of artificial intelligence (AI). Our moto is to make legal knowledge 
+                 easily accessible and understandable for everyone, regardless of their legal expertise.
+
+              </p>
+              <a
+                href="https://github.com/mukul20csu355/insaaf-ai"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link !</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets\jpeg\emotion.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Emotion Detection</h3>
+              <p class="projects__row-content-desc">
+                Helps the users to commute from one place to other at cheap prices
+               and also helps in controlling the pollution while keeping the safety of
+                commuters and providing better opportunities to the driver’s
+               community. Flutter is used for the app development part and Figma is
+               used for designing. HTML, CSS & JS is used for website development
+              </p>
+              <a
+                href="https://github.com/mukul20csu355/emotion_detection"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link !</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets\jpeg\motortrans.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">MOTORPULL</h3>
+              <p class="projects__row-content-desc">
+                Helps the users to commute from one place to other at cheap prices
+               and also helps in controlling the pollution while keeping the safety of
+                commuters and providing better opportunities to the driver’s
+               community. Flutter is used for the app development part and Figma is
+               used for designing. HTML, CSS & JS is used for website development
+              </p>
+              <a
+                href="https://github.com/mukul20csu355/Motorpull"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link !</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets\jpeg\prescriptiontrans.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">INTELLIGENT PRESCRIPTION ANALYSIS SYSTEM</h3>
+              <p class="projects__row-content-desc">
+                Bridge the gap between raw prescription data and actionable medical
+knowledge, it not only elevates the accuracy of prescription
+interpretation but also contributes to the broader goals of patient
+safety, efficient healthcare delivery & informed medical decisionmaking. LSTM is used for preprocessing and sequential nature of
+prescription text & medicine name extraction . Tensorflow is used for
+model development, training & optimization. Python is used for
+scripting and data processing and for integration of components
+
+              </p>
+              <a
+                href="https://github.com/mukul20csu355/intelligent_prescription_analysis"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link !</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets\jpeg\aicursortrans.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">AI-CURSOR</h3>
+              <p class="projects__row-content-desc">
+                Converts hand gestures into mouse movements and clicks in real
+              time using a camera, user can move the mouse cursor by raising and
+              moving their index finger and can click the mouse by raising and
+              bringing together their middle and index finger. A no of libraries and
+              tools are used like OpenCV for camera input and image processing,
+              MediaPipe for hand landmark recognition and AutoPy for imitating
+              mouse motions and clicks.
+
+              </p>
+              <a
+                href="https://github.com/mukul20csu355/ai-cursor"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link !</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets\jpeg\ach.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">A Children's Habitat</h3>
+              <p class="projects__row-content-desc">
+                A Children's Habitat is an inviting and educational website designed for a playschool,
+                 developed using HTML, CSS, and JavaScript. This project highlights my skills in creating
+                  engaging and user-friendly web experiences tailored for parents and children. The website
+                   features a cheerful and colorful design that appeals to young audiences and provides 
+                   comprehensive information about the playschool's programs, staff, and facilities. It 
+                   includes interactive elements such as an image gallery showcasing school activities, 
+                   smooth navigation, and responsive design to ensure accessibility across all devices. 
+                   A Children's Habitat is a testament to my ability to blend technical proficiency with 
+                   creative design to produce a welcoming and informative online presence for educational institutions.
+              </p>
+              <a
+                href="https://a-children-s-habitat.web.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Link !</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   <!-- Education Section -->
+<section id="education">
+  <div class="container">
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech in Computer Science - The Northcap University (2020-2024)</li>
+      <li>Higher Secondary Certificate[12th] - CBSE (2019-2020)</li>
+      <li>Secondary School Certificate[10th] - CBSE (2019-2020)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="work-experience">
+  <div class="container">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>Worked as a freelancer with Sevenceramix for the WEB DESIGNING and DEVELOPMENT</li>
+      <li>Worked as an intern with the MCN SOLUTIONS PVT. LTD. on the bloackchain technology, WEB DESIGNING on FIGMA</li>
+      <li>Worked as an intern with the SASHIV TECHNOLOGY on the FLUTTER , designing on FIGMA , WEB DEVELOPMENT</li>
+      <LI>Worked as an intern under the INDUSTRIAL TRAINING PROGRAM of the MENTORTCA TECHNOLOGY PVT. LTD. in the data science</LI>
+      <li>Project work in the MCN SOLUTIONS PVT. LTD. on website application design and development using HTML, CSS, JAVASCRIPT</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Co-curricular Activities Section -->
+<section id="co-curricular">
+  <div class="container">
+    <h2>Co-curricular Activities</h2>
+    <ul>
+      <li>SQL Training Program from TCA</li>
+      <li>ISEA Certified Cyber Hygiene Practitioner</li>
+      <li>Python Training Program from TCA</li>
+      <li>Runner up at Mind Benders contest from K.R Mangalam university</li>
+      <li>Machine Learing Training program from TCA</li>
+      <li>Certification of Advanced Cyber Security - Threats and Governance from Great Learning Academy</li>
+      <li>C++ Training Program from TCA</li>
+      <li>Data Science Training Program from MENTORTCA TECHNOLOGY PVT. LTD.</li>
+      <li>Industrial Robotics certification from AKGEC skills foundation</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Volunteer Experience Section -->
+<section id="Volunteer Experience">
+  <div class="container">
+    <h2>Volunteer Experience</h2>
+    <ul>
+      <a
+                href="https://www.c-sharpcorner.com/article/how-to-integrate-ganache-with-nextjs/"
+                target="_blank"
+                ><li>Technical content Writter at C#corner</li></a
+              >
+      <li>Guest Lecture at JMIET college</li>
+      <li>Adi Shakti Shiksha Foundation</li>
+      <li>Volunteer at Yatan NGO</li>
+      <li>IEEE Ncu Tech Community</li>
+      <li>Minerva Publicity Team</li>
+      <li>IEEE Computer Society core team member</li>
+      <li>Member of GDSC club</li>
+      <li>Volunteer at Udaan NCU </li>
+    </ul>
+  </div>
+</section>
+
+
+      <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Feel free to reach out for collaborations, inquiries, or opportunities.
+          </span>
+        </h2>
+         <div class="contact__form-container">
+           <form action="https://api.web3forms.com/submit" method="post" class="contact__form">
+            <input type="hidden" name="access_key" value="74c2a177-07d0-4310-9f3a-7c8a1098d2e3">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="email"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="PhoneNumber">PhoneNumber</label>
+              <input
+                required
+                placeholder="Enter Your phonenumber"
+                type="number"
+                class="contact__form-input"
+                name="PhoneNumber"
+                id="PhoneNumber"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form> 
+        </div>
+      </div>
+    </section>  
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social Connections</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mukul-613866201/">
+                <img
+                  class="main-footer__icon"
+                  src="assets\png\linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/mukul20csu355">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=mukulchaudhary870@gmail.com&tf=1">
+                <img
+                  class="main-footer__icon"
+                  src="assets\png\gmail.png"
+                  alt="icon"
+                />
+              </a>
+              <!-- <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="assets\png\whatsapp.png"
+                  alt="icon"
+                  id="whatsappIcon"
+                />
+              </a> -->
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Mukul</h4>
+            <p class="main-footer__short-desc">
+              Developer
+              <li>+91-8375074830</li>
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2024. Made by
+          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/mukul-613866201/"
+            >Mukul</a 
+          >
+        </div>
+      </div>
+    </footer>
+
+     <script src="./index.js"></script> 
+  </body>
+</html>
+<script>
+  document.getElementById('whatsappIcon').onclick = function() {
+      var phoneNumber = '+91 8375074830';  // Replace with your phone number
+      var message = 'Hi there, ';  // Default message (optional)
+      var url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+      window.location.href = url;
+  };
+</script>
